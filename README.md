@@ -30,13 +30,25 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Explain how to build stateful class components.
 
+<!-- To build stateful class components the component must have something modifying state, meaning that something is being changed, or that the component's purpose is to change something. Whereas a stateless component will simply display, or do some kind of dumb functionality. To build one you would simply set something to state, lets say an array of data, and your stateful functions would be able to modify that state or set it depending on your changing needs.-->
+
 2. Describe the different phases of the component lifecycle.
+
+<!-- There are three phases, a mount phase, an update phase, and a cleanup phase. The didMount phase will be fetching data, collecting what you need before creating a component and developing it. Then the update phase will consist of specifically updating state, using stateful components to change things in the data. Then unmounting will consist of reseting data, removing components, and cleaning up whatever you need in your code. -->
 
 3. Demonstrate an understanding of class component lifecycle methods.
 
+<!-- Using componentDidMount in our case simply gathers the information we need and feeds it to our stateful logic to begin modification on a DidUpdate phase. For example we would call in axios data and set that data to our state.
+
+However, since we did not cover how to use the other two phases componentDidUpdate and componentWillUnmount in real time. I cannot say that we know what to put inside of them, but we understand in theory what they would potentially be used for. -->
+
 4. Define stateful logic.
 
+<!-- Stateful logic is simply logic that is changing state or gives the ability to change state. -->
+
 5. Describe how to test a React component with React Testing Library.
+
+<!-- To test a component you will need to call render to be able to pull your component into a test, then perform any number of functions on it, such as finding specific text, if a field is filled out, if a button is submitted, and then assert that test to make sure it is completed. -->
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
